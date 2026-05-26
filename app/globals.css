@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --muted: #f1f5f9;
+  --muted-foreground: #475569;
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --border: #e2e8f0;
+  --accent: #0d3b66;
+  --accent-foreground: #ffffff;
+  --accent-muted: #e8f1f8;
+  --ring: var(--accent);
+}
+
+[data-property="main"] {
+  --accent: #0d3b66;
+  --accent-muted: #e8f1f8;
+}
+
+[data-property="mortgage"] {
+  --accent: #1b6b4a;
+  --accent-muted: #e6f4ec;
+}
+
+[data-property="wealth"] {
+  --accent: #5c4d7d;
+  --accent-muted: #f0edf5;
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
