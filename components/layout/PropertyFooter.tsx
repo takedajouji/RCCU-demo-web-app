@@ -29,6 +29,12 @@ export function PropertyFooter({ property }: PropertyFooterProps) {
 
         <div className="mt-4 flex flex-wrap gap-4 text-sm text-[var(--muted-foreground)]">
           <Link
+            href="/partners"
+            className="hover:text-[var(--foreground)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--ring)] rounded-sm"
+          >
+            Partners
+          </Link>
+          <Link
             href="/privacy"
             className="hover:text-[var(--foreground)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--ring)] rounded-sm"
           >

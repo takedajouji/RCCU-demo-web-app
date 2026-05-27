@@ -49,3 +49,33 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
 }
+
+.markdown-body h1 {
+  font-size: 1.875rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.markdown-body h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.markdown-body p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  color: var(--muted-foreground);
+}
+
+.markdown-body ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--muted-foreground);
+}
+
+.markdown-body strong {
+  color: var(--foreground);
+}
