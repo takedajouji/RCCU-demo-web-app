@@ -1,10 +1,8 @@
-import Link from "next/link";
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/metadata";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { PageHeader } from "@/components/marketing/PageHeader";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { AppointmentForm } from "@/components/forms/AppointmentForm";
 
 export const metadata: Metadata = pageMetadata({
   title: "Appointments",
@@ -16,34 +14,18 @@ export default function WealthAppointmentsPage() {
     <>
       <PageHeader
         title="Book a meeting"
-        description="Appointment request form with email confirmation arrives in Phase 3."
+        description="Request time with a financial planner. We'll confirm by email."
       />
-      <div className="mx-auto max-w-3xl px-4 py-12 md:px-6">
+      <div className="mx-auto max-w-2xl px-4 py-12 md:px-6">
         <Breadcrumbs
           items={[
             { name: "Wealth", path: "/wealth" },
             { name: "Appointments", path: "/wealth/appointments" },
           ]}
         />
-        <Card className="mt-10">
-          <CardHeader>
-            <CardTitle>Request an appointment</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4 text-sm text-[var(--muted-foreground)]">
-            <p>
-              Phase 3 adds a validated form for preferred date, topic, and contact details—aligned
-              with compliance copy on other RCCU forms.
-            </p>
-            <div className="flex flex-wrap gap-3">
-              <Button asChild>
-                <Link href="/contact">Contact us</Link>
-              </Button>
-              <Button asChild variant="outline">
-                <Link href="/wealth/planning">Planning services</Link>
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
+        <div className="mt-10">
+          <AppointmentForm />
+        </div>
       </div>
     </>
   );

@@ -4,6 +4,9 @@ const envSchema = z.object({
   NODE_ENV: z.enum(["development", "production", "test"]).optional(),
   NEXT_PUBLIC_SITE_URL: z.string().url().optional(),
   NEXT_PUBLIC_SITE_NAME: z.string().min(1).optional(),
+  RESEND_API_KEY: z.string().optional(),
+  RESEND_FROM_EMAIL: z.string().email().optional(),
+  NOTIFICATION_TO_EMAIL: z.string().email().optional(),
 });
 
 export type Env = z.infer<typeof envSchema>;

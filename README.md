@@ -2,7 +2,7 @@
 
 Portfolio demo for **AmFirst-style** web developer roles: a fictional multi-property credit union site (main, mortgage, wealth) built with Next.js.
 
-**Status:** Phase 2 complete — content-driven products, rates, news, locations, member help, partners, and property sub-pages.
+**Status:** Phase 3 complete — validated contact, loan inquiry, and appointment forms with Resend email delivery, honeypot spam protection, and compliance copy.
 
 ## Quick start
 
@@ -39,8 +39,8 @@ Open:
 | Phase | Scope |
 |-------|--------|
 | 1 | Scaffold |
-| 2 | Content pages, rates, news, member help (this release) |
-| 3 | Forms + email |
+| 2 | Content pages, rates, news, member help |
+| 3 | Forms + email (this release) |
 | 4 | SEO lib, sitemap, GA4 |
 | 5 | Security, improvements, maintainer docs |
 | 6 | Vercel deploy + Lighthouse |
